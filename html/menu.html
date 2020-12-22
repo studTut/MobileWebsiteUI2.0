@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="../css/style.css" rel="stylesheet" type="text/css" /><!-- css -->
+<title>Mobile Website UI</title>
+</head>
+
+<script src="../js/jquery-1.10.2.min.js"></script><!-- jquery -->
+<script src="../js/three.min.js"></script><!-- 3Dライブラリ -->
+<!--<script src="js/libs/tween.min.js"></script> アニメーションライブラリ -->
+<script src="../js/controls/TrackballControls.js"></script><!-- マウスカメラコントローラ -->
+<script src="../js/renderers/CSS3DRenderer.js"></script><!-- CSSを使って3Dを扱うライブラリ -->
+
+<body>
+            <header class="site-header">
+                <h1 id="title">タスク３</h1>
+        </header>
+    <div id="scroll">
+        <div id="container"></div> <!--描画領域（今回はブラウザ全画面を対象にしています） -->
+        <div id="text">
+　             <p class="instructor" id="inst_top">一番下までスクロールしてください</p>
+            <div id="num">
+             <p>1</p>
+             <p>2</p>
+             <p>3</p>
+             <p>4</p>
+             <p>5</p>
+             <p>6</p>
+             <p>7</p>
+             <p>8</p>
+             <p>9</p>
+             <p>10</p>
+             </div>
+               <p class="instructor" id="inst_bottom">画面を手前に傾けて<br>メニューからページ３へ移動してください</p>
+        </div>
+        <div id="container"></div>
+        <div class="content" id="num5">
+                    <p>menu</p>
+                    <a href="menu.html">ページ１</a>
+                    <a href="menu.html">ページ２</a>
+                    <a href="page03.html">ページ３</a>
+                    <a href="menu.html">ページ４</a>
+        </div>
+    </div>
+    <script src="../js/app.js"></script><!-- メインプログラム -->
+    
+
+</body>
+</html>
