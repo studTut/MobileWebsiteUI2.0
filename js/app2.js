@@ -29,7 +29,7 @@ window.addEventListener("deviceorientation", (dat) => {
         initalpha = dat.alpha;  // z軸（反時計回り）
         initbeta  = dat.beta;   // x軸（引き起こす）
         initgamma = dat.gamma;  // y軸（右に傾ける）
-	      arg = initbeta -15;
+	      arg = initbeta;
     }, {once : true} );
 init();
 animate();
@@ -120,7 +120,7 @@ function animate() {
 	    object6.position.y = 4200;
     }
    
-    document.querySelector('#num5').style.backgroundColor = 'hsl(20,50%,50%)'
+    document.querySelector('#num5').style.backgroundColor = 'hsl(120,50%,50%)'
 
     renderer.render(scene, camera);
 }
