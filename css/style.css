@@ -72,7 +72,7 @@ body {
   color:black;
 }
 
-#num5 {
+#menu {
   width:400px;
   height:500px;
   border-radius; 70px;
@@ -83,10 +83,10 @@ body {
   text-decoration: none;
   color:white;
 }
-#num5 p {
+#menu p {
   padding:0;
 }
-#num5 a {
+#menu a {
   padding: 10px 0;
   text-align:center;
   font-size:40px;
