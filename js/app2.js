@@ -49,11 +49,11 @@ function init() {
     camera.position.z = 1000;
 
 
-    object5 = new THREE.CSS3DObject(document.getElementById('num5'));
-    scene.add(object5);
-    object5.position.x = 0;
-    object5.position.y = 1.5*space;
-    object5.position.z = 2*space;
+    menu = new THREE.CSS3DObject(document.getElementById('menu));
+    scene.add(menu);
+    menu.position.x = 0;
+    menu.position.y = 1.5*space;
+    menu.position.z = 2*space;
     
     object6 = new THREE.CSS3DObject(document.getElementById('text'));
     scene.add(object6);
@@ -104,11 +104,11 @@ function animate() {
     
 	
     if(beta <= arg) {
-    object5.rotation.x = arg/10 -1*beta/10;
-    object5.position.y = 2100 -2000*beta/arg;
+    menu.rotation.x = arg/10 -1*beta/10;
+    menu.position.y = 2100 -2000*beta/arg;
     } else {
-	    object5.rotation.x = 0;
-	    object5.position.y = 100;
+	    menu.rotation.x = 0;
+	    menu.position.y = 100;
     }
 	
 
@@ -120,7 +120,7 @@ function animate() {
 	    object6.position.y = 4200;
     }
    
-    document.querySelector('#num5').style.backgroundColor = 'hsl(120,50%,50%)'
+    document.querySelector('#menu').style.backgroundColor = 'hsl(120,50%,50%)'
 
     renderer.render(scene, camera);
 }
