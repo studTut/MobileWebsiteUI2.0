@@ -3,6 +3,7 @@ var controls;
 var object;
 
 var alpha=0, beta=0, gamma=0;
+var alphas=0, betas=0, gammas=0;
 var line = 200;
 var space = line * 1.1;
 var move;
@@ -25,12 +26,19 @@ window.addEventListener("deviceorientation", (dat) => {
     gamma = dat.gamma;  // y軸（右に傾ける）
 });
 
-    window.addEventListener("deviceorientation", (dat) => {
-        initalpha = dat.alpha;  // z軸（反時計回り）
-        initbeta  = dat.beta;   // x軸（引き起こす）
-        initgamma = dat.gamma;  // y軸（右に傾ける）
+window.addEventListener("deviceorientation", (dat) => {
+     initalpha = dat.alpha;  // z軸（反時計回り）
+     initbeta  = dat.beta;   // x軸（引き起こす）
+     initgamma = dat.gamma;  // y軸（右に傾ける）
 	arg = initbeta + 15;
-    }, {once : true} );
+}, {once : true} );
+
+window.addEventListener("devicemotion", function (e){
+    alphas = Math.round(10*e.rotationRate.alpha)/10;  // z軸（反時計回り）
+    betas  = Math.round(10*e.rotationRate.beta)/10;   // x軸（引き起こす）
+    gammas = Math.round(10*e.rotationRate.gamma)/10;  // y軸（右に傾ける）
+});
+
 init();
 animate();
 
