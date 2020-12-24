@@ -18,6 +18,7 @@ var t = 0;
 var countup = function() {tm ++;}
 var a = -10;//減速２０
 var initmenuY = 800;
+var initmenua = 15;
 
 var plus = 80; //手前しきい値
 var minus = -30; //奥しきい値
@@ -66,7 +67,7 @@ function init() {
     menu.position.x = 0;
     menu.position.y = initmenuY;
     menu.position.z = 2*space;
-    menu.rotation.x = -15;
+    menu.rotation.x = initmenua;
     
     object6 = new THREE.CSS3DObject(document.getElementById('text'));
     scene.add(object6);
@@ -136,7 +137,7 @@ if( alphas < minus || alphas > plus ) {
 	}*/
 	if(menu.position.y >= initmenuY) {
 		menu.position.y = initmenuY;
-		menu.rotation.x = -15;
+		menu.rotation.x = initmenua;
 	}else if(menu.position.y <= 0) {
 		menu.position.y = 0;
 		menu.rotation.x = 0;
