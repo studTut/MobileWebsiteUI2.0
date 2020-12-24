@@ -52,26 +52,6 @@ function init() {
     );
     
     camera.position.z = 1000;
-
-    object1 = new THREE.CSS3DObject(document.getElementById('num1'));
-    scene.add(object1);
-    object1.position.x = -1*space;
-    object1.position.y = space;
-    
-    object2 = new THREE.CSS3DObject(document.getElementById('num2'));
-    scene.add(object2);
-    object2.position.x = space;
-    object2.position.y = space;
-    
-    object3 = new THREE.CSS3DObject(document.getElementById('num3'));
-    scene.add(object3);
-    object3.position.x = -1*space;
-    object3.position.y = -1*space;
-
-    object4 = new THREE.CSS3DObject(document.getElementById('num4'));
-    scene.add(object4);
-    object4.position.x = space;
-    object4.position.y = -1*space;
     
 
 
