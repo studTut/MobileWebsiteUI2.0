@@ -138,8 +138,8 @@ if( alphas < minus || alphas > plus ) {
 	if(menu.position.y >= initmenuY) {
 		menu.position.y = initmenuY;
 		menu.rotation.x = initmenua;
-	}else if(menu.position.y <= 0) {
-		menu.position.y = 0;
+	}else if(menu.position.y <= 100) {
+		menu.position.y = 100;
 		menu.rotation.x = 0;
 	} 
 } else if ( alphas <= minus && alphas <= plus ) {
