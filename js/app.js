@@ -17,6 +17,7 @@ var tm = 0;
 var t = 0;
 var countup = function() {tm ++;}
 var a = -10;//減速２０
+var initmenuY = 500;
 
 
 
@@ -60,7 +61,7 @@ function init() {
     menu = new THREE.CSS3DObject(document.getElementById('menu'));
     scene.add(menu);
     menu.position.x = 0;
-    menu.position.y = 100;
+    menu.position.y = initmenuY;
     menu.position.z = 2*space;
     
     object6 = new THREE.CSS3DObject(document.getElementById('text'));
@@ -129,8 +130,8 @@ if(alphas <-50 || alphas > 70) {
 	}else if(menu.rotation.x <= 0){
 		menu.rotation.x = 0;
 	}*/
-	if(menu.position.y >= 500) {
-		menu.position.y = 500;
+	if(menu.position.y >= initmenuY) {
+		menu.position.y = initmenuY;
 		menu.rotation.x = -15;
 	}else if(menu.position.y <= 0) {
 		menu.position.y = 0;
