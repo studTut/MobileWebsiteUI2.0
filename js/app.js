@@ -148,7 +148,7 @@ if(alphas <-50 || alphas > 50) {
 	    object6.position.y = 4200;
     }
    
-    document.querySelector('#menu').style.backgroundColor = 'hsl(220,50%,50%)'
+    document.querySelector('#menu').style.backgroundColor = 'hsl(150,50%,50%)'
 
     renderer.render(scene, camera);
 }
