@@ -60,7 +60,7 @@ function init() {
     menu = new THREE.CSS3DObject(document.getElementById('menu'));
     scene.add(menu);
     menu.position.x = 0;
-    menu.position.y = 1.5*space;
+    menu.position.y = 100;
     menu.position.z = 2*space;
     
     object6 = new THREE.CSS3DObject(document.getElementById('text'));
@@ -120,17 +120,17 @@ function animate() {
     }*/
 	
 if(alphas <-50 || alphas > 50) {
-	menu.rotation.x += alphas/200;
+	menu.rotation.x += alphas/500;
 	//menu.rotation.x = arg/10 -1*beta/10;
-	menu.position.y -= alphas/10;
+	menu.position.y -= alphas/5;
 	//menu.rotation.x = arg/10 -1*beta/10;
 	if(menu.rotation.x >=15) {
 		menu.rotation.x = 15;
 	}else if(menu.rotation.x <= 0){
 		menu.rotation.x = 0;
 	}
-	if(menu.position.y >= 5) {
-		menu.position.y = 5;
+	if(menu.position.y >= 100) {
+		menu.position.y = 100;
 	}else if(menu.position.y <= 0) {
 		menu.position.y = 0;
 	} 
