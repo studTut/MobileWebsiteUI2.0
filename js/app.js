@@ -126,7 +126,7 @@ function animate() {
     }*/
 	
 if( alphas < minus || alphas > plus ) {
-	menu.rotation.x -= alphas/500;
+	menu.rotation.x -= alphas/800;
 	//menu.rotation.x = arg/10 -1*beta/10;
 	menu.position.y -= alphas/2;
 	//menu.rotation.x = arg/10 -1*beta/10;
@@ -156,7 +156,7 @@ if( alphas < minus || alphas > plus ) {
 	    object6.position.y = 4200;
     }
    
-    document.querySelector('#menu').style.backgroundColor = 'hsl(270,50%,50%)'
+    document.querySelector('#menu').style.backgroundColor = 'hsl(220,50%,50%)'
 
     renderer.render(scene, camera);
 }
