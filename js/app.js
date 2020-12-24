@@ -20,8 +20,8 @@ var a = -10;//減速２０
 var initmenuY = 900;
 var initmenua = 15;
 
-var plus = 100; //手前しきい値
-var minus = -20; //奥しきい値
+var plus = 120; //手前しきい値
+var minus = -30; //奥しきい値
 var objsizeY; //テキストコンテンツサイズ
 
 
@@ -156,7 +156,7 @@ if( alphas < minus || alphas > plus ) {
 	    object6.position.y = 4200;
     }
    
-    document.querySelector('#menu').style.backgroundColor = 'hsl(150,50%,50%)'
+    document.querySelector('#menu').style.backgroundColor = 'hsl(222,50%,50%)'
 
     renderer.render(scene, camera);
 }
