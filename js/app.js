@@ -18,10 +18,10 @@ var t = 0;
 var countup = function() {tm ++;}
 var a = -10;//減速２０
 var initmenuY = 700;
-var plus = 80;
-var minus = -30;
 
-
+var plus = 80; //手前しきい値
+var minus = -30; //奥しきい値
+//var objsizeY; //テキストコンテンツサイズ
 
 
 window.addEventListener("deviceorientation", (dat) => {
@@ -73,7 +73,7 @@ function init() {
     object6.position.x = 0;
     object6.position.y = 0;
     object6.position.z = 0;
-	
+    //objsizeY = object6.geometry.parameters.height;
 
 
     // CSS3Dレンダラー
