@@ -20,7 +20,7 @@ var a = -10;//減速２０
 var initmenuY = 900;
 var initmenua = 15;
 
-var plus = 120; //手前しきい値
+var plus = 140; //手前しきい値
 var minus = -30; //奥しきい値
 var objsizeY; //テキストコンテンツサイズ
 
@@ -128,7 +128,7 @@ function animate() {
 if( alphas < minus || alphas > plus ) {
 	menu.rotation.x -= alphas/500;
 	//menu.rotation.x = arg/10 -1*beta/10;
-	menu.position.y -= alphas;
+	menu.position.y -= alphas/2;
 	//menu.rotation.x = arg/10 -1*beta/10;
 	/*if(menu.rotation.x >=15) {
 		menu.rotation.x = 15;
@@ -156,7 +156,7 @@ if( alphas < minus || alphas > plus ) {
 	    object6.position.y = 4200;
     }
    
-    document.querySelector('#menu').style.backgroundColor = 'hsl(222,50%,50%)'
+    document.querySelector('#menu').style.backgroundColor = 'hsl(270,50%,50%)'
 
     renderer.render(scene, camera);
 }
