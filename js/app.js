@@ -17,7 +17,7 @@ var tm = 0;
 var t = 0;
 var countup = function() {tm ++;}
 var a = -10;//減速２０
-var initmenuY = 500;
+var initmenuY = 700;
 
 
 
@@ -63,6 +63,7 @@ function init() {
     menu.position.x = 0;
     menu.position.y = initmenuY;
     menu.position.z = 2*space;
+    menu.rotation.x = -15;
     
     object6 = new THREE.CSS3DObject(document.getElementById('text'));
     scene.add(object6);
@@ -120,10 +121,10 @@ function animate() {
 	    menu.position.y = 100;
     }*/
 	
-if(alphas <-50 || alphas > 70) {
-	menu.rotation.x -= alphas/1000;
+if(alphas <-30 || alphas > 70) {
+	menu.rotation.x -= alphas/1500;
 	//menu.rotation.x = arg/10 -1*beta/10;
-	menu.position.y -= alphas/5;
+	menu.position.y -= alphas/3;
 	//menu.rotation.x = arg/10 -1*beta/10;
 	/*if(menu.rotation.x >=15) {
 		menu.rotation.x = 15;
@@ -137,7 +138,7 @@ if(alphas <-50 || alphas > 70) {
 		menu.position.y = 0;
 		menu.rotation.x = 0;
 	} 
-} else if ( alphas<= -50 && alphas <= 70) {
+} else if ( alphas<= -30 && alphas <= 70) {
 	menu.rotation.x -= 0;
 	menu.position.y -= 0;
 }
@@ -151,7 +152,7 @@ if(alphas <-50 || alphas > 70) {
 	    object6.position.y = 4200;
     }
    
-    document.querySelector('#menu').style.backgroundColor = 'hsl(220,50%,50%)'
+    document.querySelector('#menu').style.backgroundColor = 'hsl(150,50%,50%)'
 
     renderer.render(scene, camera);
 }
