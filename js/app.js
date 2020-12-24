@@ -119,11 +119,11 @@ function animate() {
 	    menu.position.y = 100;
     }*/
 	
-if(betas <-50 || betas > 50) {
-	//menu.rotation.x -= betas/100;
-	menu.rotation.x = arg/10 -1*beta/10;
-	//menu.position.y += betas/5;
-	menu.rotation.x = arg/10 -1*beta/10;
+if(betas <-30 || betas > 30) {
+	menu.rotation.x -= betas/200;
+	//menu.rotation.x = arg/10 -1*beta/10;
+	menu.position.y += betas/10;
+	//menu.rotation.x = arg/10 -1*beta/10;
 	/* if(menu.rotation.x >=15) {
 		menu.rotation.x = 15;
 	}else if(menu.rotation.x <= 0){
@@ -134,7 +134,7 @@ if(betas <-50 || betas > 50) {
 	}else if(menu.position.y <= 0) {
 		menu.position.y = 0;
 	} */
-} else if ( betas<= -50 && betas <= 50) {
+} else if ( betas<= -30 && betas <= 30) {
 	menu.rotation.x -= 0;
 	menu.position.y -= 0;
 }
