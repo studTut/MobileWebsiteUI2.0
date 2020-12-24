@@ -17,6 +17,9 @@ var tm = 0;
 var t = 0;
 var countup = function() {tm ++;}
 var a = -10;//減速２０
+var initmenuY = 700;
+var plus = 80;
+var minus = -30;
 
 
 
@@ -110,9 +113,6 @@ function onWindowResize() {
 
 
 function animate() {
-	var initmenuY = 700;
-	var plus = 80;
-	var minus = -30;
     requestAnimationFrame(animate);
     
 	/*
