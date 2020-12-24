@@ -124,7 +124,7 @@ function animate() {
 	    menu.position.y = 100;
     }*/
 	
-if(alphas <minus || alphas > plus) {
+if( alphas < minus || alphas > plus ) {
 	menu.rotation.x -= alphas/1500;
 	//menu.rotation.x = arg/10 -1*beta/10;
 	menu.position.y -= alphas/3;
@@ -141,7 +141,7 @@ if(alphas <minus || alphas > plus) {
 		menu.position.y = 0;
 		menu.rotation.x = 0;
 	} 
-} else if ( alphas<= minus && alphas <= plus) {
+} else if ( alphas <= minus && alphas <= plus ) {
 	menu.rotation.x -= 0;
 	menu.position.y -= 0;
 }
