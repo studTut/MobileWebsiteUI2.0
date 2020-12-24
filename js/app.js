@@ -120,7 +120,7 @@ function animate() {
     }*/
 	
 if(alphas <-50 || alphas > 70) {
-	menu.rotation.x += alphas/1000;
+	menu.rotation.x -= alphas/1000;
 	//menu.rotation.x = arg/10 -1*beta/10;
 	menu.position.y -= alphas/5;
 	//menu.rotation.x = arg/10 -1*beta/10;
@@ -129,9 +129,9 @@ if(alphas <-50 || alphas > 70) {
 	}else if(menu.rotation.x <= 0){
 		menu.rotation.x = 0;
 	}*/
-	if(menu.position.y >= 200) {
-		menu.position.y = 200;
-		menu.rotation.x = 15;
+	if(menu.position.y >= 500) {
+		menu.position.y = 500;
+		menu.rotation.x = -15;
 	}else if(menu.position.y <= 0) {
 		menu.position.y = 0;
 		menu.rotation.x = 0;
@@ -150,7 +150,7 @@ if(alphas <-50 || alphas > 70) {
 	    object6.position.y = 4200;
     }
    
-    document.querySelector('#menu').style.backgroundColor = 'hsl(180,50%,50%)'
+    document.querySelector('#menu').style.backgroundColor = 'hsl(220,50%,50%)'
 
     renderer.render(scene, camera);
 }
