@@ -21,7 +21,7 @@ var initmenuY = 700;
 
 var plus = 80; //手前しきい値
 var minus = -30; //奥しきい値
-//var objsizeY; //テキストコンテンツサイズ
+var objsizeY; //テキストコンテンツサイズ
 
 
 window.addEventListener("deviceorientation", (dat) => {
@@ -73,7 +73,7 @@ function init() {
     object6.position.x = 0;
     object6.position.y = 0;
     object6.position.z = 0;
-    //objsizeY = object6.geometry.parameters.height;
+    objsizeY = object6.geometry.parameters.height;
 
 
     // CSS3Dレンダラー
@@ -155,7 +155,7 @@ if( alphas < minus || alphas > plus ) {
 	    object6.position.y = 4200;
     }
    
-    document.querySelector('#menu').style.backgroundColor = 'hsl(150,50%,50%)'
+    document.querySelector('#menu').style.backgroundColor = 'hsl(220,50%,50%)'
 
     renderer.render(scene, camera);
 }
