@@ -21,7 +21,7 @@ var initmenuY = 800;
 var initmenua = 15;
 
 var plus = 80; //手前しきい値
-var minus = -30; //奥しきい値
+var minus = -20; //奥しきい値
 var objsizeY; //テキストコンテンツサイズ
 
 
