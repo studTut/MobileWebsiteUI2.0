@@ -74,7 +74,7 @@ function init() {
     object6.position.x = 0;
     object6.position.y = 0;
     object6.position.z = 0;
-    objsizeY = object6.geometry.parameters.height;
+    //objsizeY = object6.geometry.parameters.height;
 
 
     // CSS3Dレンダラー
