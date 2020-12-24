@@ -113,15 +113,17 @@ function animate() {
 	/*
     if(beta <= arg) {
     menu.rotation.x = arg/10 -1*beta/10;
-    menu.position.y = 2100 -2000*beta/arg;
+    menu.rotation.x = arg/10 -1*beta/10;
     } else {
 	    menu.rotation.x = 0;
 	    menu.position.y = 100;
     }*/
 	
 if(betas <-50 || betas > 50) {
-	menu.rotation.x -= betas/100;
-	menu.position.y += betas/5;
+	//menu.rotation.x -= betas/100;
+	menu.rotation.x = arg/10 -1*beta/10;
+	//menu.position.y += betas/5;
+	menu.rotation.x = arg/10 -1*beta/10;
 	/* if(menu.rotation.x >=15) {
 		menu.rotation.x = 15;
 	}else if(menu.rotation.x <= 0){
