@@ -17,7 +17,7 @@ var tm = 0;
 var t = 0;
 var countup = function() {tm ++;}
 var a = -10;//減速２０
-var initmenuY = 800;
+var initmenuY = 900;
 var initmenua = 15;
 
 var plus = 80; //手前しきい値
@@ -126,7 +126,7 @@ function animate() {
     }*/
 	
 if( alphas < minus || alphas > plus ) {
-	menu.rotation.x -= alphas/1000;
+	menu.rotation.x -= alphas/800;
 	//menu.rotation.x = arg/10 -1*beta/10;
 	menu.position.y -= alphas/2;
 	//menu.rotation.x = arg/10 -1*beta/10;
