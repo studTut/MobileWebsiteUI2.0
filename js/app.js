@@ -129,11 +129,11 @@ if(alphas <-50 || alphas > 50) {
 	}else if(menu.rotation.x <= 0){
 		menu.rotation.x = 0;
 	}
-	/*if(menu.position.y >= 5) {
+	if(menu.position.y >= 5) {
 		menu.position.y = 5;
 	}else if(menu.position.y <= 0) {
 		menu.position.y = 0;
-	} */
+	} 
 } else if ( alphas<= -50 && alphas <= 50) {
 	menu.rotation.x -= 0;
 	menu.position.y -= 0;
@@ -148,7 +148,7 @@ if(alphas <-50 || alphas > 50) {
 	    object6.position.y = 4200;
     }
    
-    document.querySelector('#menu').style.backgroundColor = 'hsl(220,50%,50%)'
+    document.querySelector('#menu').style.backgroundColor = 'hsl(150,50%,50%)'
 
     renderer.render(scene, camera);
 }
