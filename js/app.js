@@ -120,8 +120,8 @@ function animate() {
     }*/
 	
 if(betas <-50 || betas > 50) {
-	menu.rotation.x -= betas/10;
-	menu.position.y += betas/10;
+	menu.rotation.x -= betas/100;
+	menu.position.y += betas/5;
 	/* if(menu.rotation.x >=15) {
 		menu.rotation.x = 15;
 	}else if(menu.rotation.x <= 0){
