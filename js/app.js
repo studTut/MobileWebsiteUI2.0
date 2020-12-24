@@ -119,10 +119,10 @@ function animate() {
 	    menu.position.y = 100;
     }*/
 	
-if(betas <-30 || betas > 30) {
-	menu.rotation.x -= betas/200;
+if(alphas <-50 || alphas > 50) {
+	menu.rotation.x -= alphas/200;
 	//menu.rotation.x = arg/10 -1*beta/10;
-	menu.position.y += betas/10;
+	menu.position.y += alphas;
 	//menu.rotation.x = arg/10 -1*beta/10;
 	/* if(menu.rotation.x >=15) {
 		menu.rotation.x = 15;
@@ -134,7 +134,7 @@ if(betas <-30 || betas > 30) {
 	}else if(menu.position.y <= 0) {
 		menu.position.y = 0;
 	} */
-} else if ( betas<= -30 && betas <= 30) {
+} else if ( alphas<= -50 && alphas <= 50) {
 	menu.rotation.x -= 0;
 	menu.position.y -= 0;
 }
