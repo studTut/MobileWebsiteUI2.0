@@ -17,7 +17,7 @@ var tm = 0;
 var t = 0;
 var countup = function() {tm ++;}
 var a = -10;//減速２０
-var initmenuY = 700;
+
 
 
 
@@ -110,6 +110,9 @@ function onWindowResize() {
 
 
 function animate() {
+	var initmenuY = 700;
+	var plus = 80;
+	var minus = -30;
     requestAnimationFrame(animate);
     
 	/*
@@ -121,7 +124,7 @@ function animate() {
 	    menu.position.y = 100;
     }*/
 	
-if(alphas <-30 || alphas > 70) {
+if(alphas <minus || alphas > plus) {
 	menu.rotation.x -= alphas/1500;
 	//menu.rotation.x = arg/10 -1*beta/10;
 	menu.position.y -= alphas/3;
@@ -138,7 +141,7 @@ if(alphas <-30 || alphas > 70) {
 		menu.position.y = 0;
 		menu.rotation.x = 0;
 	} 
-} else if ( alphas<= -30 && alphas <= 70) {
+} else if ( alphas<= minus && alphas <= plus) {
 	menu.rotation.x -= 0;
 	menu.position.y -= 0;
 }
