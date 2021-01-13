@@ -74,10 +74,11 @@ function init() {
     object6.position.x = 0;
     object6.position.y = 0;
     object6.position.z = 0;
-    objsizeY = object6.geometry.parameters.height;
-　　posY = -1 * objsizeY/2;
-    top = 200 + objsizeY/2;
-    bottom = -1 * objsizeY/2;
+    //objsizeY = object6.geometry.parameters.height;
+　　//posY = -1 * objsizeY/2;
+	posY = -4000;
+    //top = 200 + objsizeY/2;
+    //bottom = -1 * objsizeY/2;
 
     // CSS3Dレンダラー
     renderer = new THREE.CSS3DRenderer();
