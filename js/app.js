@@ -9,7 +9,7 @@ var space = line * 1.1;
 var move;
 var no = 1;				// 数値格納用
 var number;			// 数値表示部分のDOM取得用
-var posY = -4000;
+var posY, top, bottom;
 var initbeta,initalpha,initgamma;
 //var arg = 60;
 var arg;
@@ -74,8 +74,10 @@ function init() {
     object6.position.x = 0;
     object6.position.y = 0;
     object6.position.z = 0;
-    objsizeY = object6.parameters.height;
-
+    objsizeY = object6.geometry.parameters.height;
+　　posY = -1 * objsizeY/2;
+    top = 200 + objsizeY/2;
+    bottom = -1 * objsizeY/2;
 
     // CSS3Dレンダラー
     renderer = new THREE.CSS3DRenderer();
@@ -156,7 +158,7 @@ if( alphas < minus || alphas > plus ) {
 	    object6.position.y = 4200;
     }
    
-    document.querySelector('#menu').style.backgroundColor = 'hsl(20,50%,50%)'
+    document.querySelector('#menu').style.backgroundColor = 'hsl(180,50%,50%)'
 
     renderer.render(scene, camera);
 }
