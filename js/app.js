@@ -24,6 +24,9 @@ var plus = 160; //手前しきい値
 var minus = -40; //奥しきい値
 var objsizeY; //テキストコンテンツサイズ
 
+top = 4200;
+bottom = -4000;
+
 
 window.addEventListener("deviceorientation", (dat) => {
     alpha = dat.alpha;  // z軸（反時計回り）
@@ -75,10 +78,10 @@ function init() {
     object6.position.y = 0;
     object6.position.z = 0;
     //objsizeY = object6.geometry.parameters.height;
-	objsizeY = 8000;
-　　posY = -1 * objsizeY/2;
-    top = 200 + objsizeY/2;
-    bottom = -1 * objsizeY/2;
+    //objsizeY = 8000;
+　　posY = -4000;
+    //top = 200 + objsizeY/2;
+    //bottom = -1 * objsizeY/2;
 
     // CSS3Dレンダラー
     renderer = new THREE.CSS3DRenderer();
