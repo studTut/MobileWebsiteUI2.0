@@ -75,10 +75,10 @@ function init() {
     object6.position.y = 0;
     object6.position.z = 0;
     //objsizeY = object6.geometry.parameters.height;
-　　//posY = -1 * objsizeY/2;
-	posY = -4000;
-    //top = 200 + objsizeY/2;
-    //bottom = -1 * objsizeY/2;
+	objsizeY = 8000;
+　　posY = -1 * objsizeY/2;
+    top = 200 + objsizeY/2;
+    bottom = -1 * objsizeY/2;
 
     // CSS3Dレンダラー
     renderer = new THREE.CSS3DRenderer();
@@ -151,15 +151,15 @@ if( alphas < minus || alphas > plus ) {
 }
 	
 
- if(posY >= -4000 && posY <= 4200) {
+ if(posY >= bottom && posY <= top) {
 	 object6.position.y = posY;
-    } else if (posY < -4000 ){
-	    object6.position.y = -4000;
-    } else if (posY > 4200) {
-	    object6.position.y = 4200;
+    } else if (posY < bottom ){
+	    object6.position.y = bottom;
+    } else if (posY > top) {
+	    object6.position.y = top;
     }
    
-    document.querySelector('#menu').style.backgroundColor = 'hsl(180,50%,50%)'
+    document.querySelector('#menu').style.backgroundColor = 'hsl(220,50%,50%)'
 
     renderer.render(scene, camera);
 }
